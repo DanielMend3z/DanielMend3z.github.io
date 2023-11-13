@@ -1,278 +1,824 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
     <title>Daniel Mendez</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="assets/css/estilos.css">
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="assets/img/logo.png" class="img-fluid">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Acerca de mi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./galeria.html">Trabajos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-
-                </ul>
-
-            </div>
+  </head>
+  <body id="page-top">
+    <nav
+      class="navbar navbar-expand-lg bg-primary text-uppercase fixed-top"
+      id="mainNav"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#page-top">Curriculum Vitae.</a>
+        <button
+          class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about"
+                >SOBRE MI</a
+              >
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact"
+                >CONTACTO</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
-    <header id="Hero-Section" class="text-light text-end  fw-bold py-5 mt-5">
-        <div class="container">
-            <div class="ms-auto col-12 col-md-7 ">
-                <h1 class="display-1 fw-bold my-5">
-                    Fotografías, observando<br> el mundo.
-                </h1>
-                <p class="my-5">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, accusamus iusto quibusdam
-                    dignissimos labore sequi. Cupiditate reiciendis eius dolore, illum adipisci harum voluptas iste
-                    mollitia inventore provident labore voluptatum nemo.
-                </p>
-                <div class="mb-5 pb-5">
-                    <button class="btn btn-lg btn-outline-info bs-light fw-bold me-4" >Trabajos</button>
-                    <button class="btn btn-lg btn-info bs-primary fw-bold">Contacto</button>
-                </div>
-            </div>
+    <!--Header-->
+    <header class="masthead bg-secondary text-white text-center">
+      <div class="container d-flex align-items-center flex-column">
+        <!-- Masthead Avatar Image-->
+        <img
+          class="masthead-avatar mb-5"
+          src="assets/img/Foto1.jpg"
+          alt="..."
+        />
+        <!-- Masthead Heading-->
+        <h1 class="masthead-heading text-uppercase mb-0">
+          Daniel Mendez Rodriguez
+        </h1>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"></div>
+          <div class="divider-custom-line"></div>
         </div>
-    </header>
-
-
-    <section id="Acerca-de-mi" class="container text-center bs-light my-5">
-
-
-        <h2 class="display-3 fw-bold my-4">Acerca de mi</h2>
-
-        <p class="my-4">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio quisquam distinctio, odit laborum aliquam
-            earum itaque cum sequi, dolorem optio vol
+        <!-- Masthead Subheading-->
+        <p class="masthead-subheading font-weight-light mb-0">
+          Electrónico - Diseñador Web - Inversor Crypto
         </p>
-
-
-        <div class="row">
-            <div class="col-12 col-md-4">
-                <i class="fas fa-camera fa-3x my-3"></i>
-                <h3 class="my-3 fw-bold">Fotógrafo Casual</h3>
-                <p class="my-3">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
-                </p>
-            </div>
-            <div class="col-12 col-md-4">
-                <i class="fa fa-bolt fa-3x my-3" aria-hidden="true"></i>
-                <h3 class="my-3 fw-bold">Electrónico</h3>
-                <p class="my-3">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
-                </p>
-            </div>
-            <div class="col-12 col-md-4">
-                <i class="fa fa-video-camera fa-3x my-3" aria-hidden="true"></i>
-                <h3 class="my-3 fw-bold">Juntando Recuerdos</h3>
-                <p class="my-3">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
-                </p>
-            </div>
+      </div>
+    </header>
+    <!--Portafolio-->
+    <section class="page-section portfolio" id="portfolio">
+      <div class="container bg-Light">
+        <!-- Portfolio Section Heading-->
+        <h2
+          class="page-section-heading text-center text-uppercase text-secondary mb-0"
+        >
+          Portafolio
+        </h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><p>Desafío Latam</p></div>
+          <div class="divider-custom-line"></div>
         </div>
+        <!-- Portafolio Grid Items-->
+        <div class="row justify-content-center">
+          <!-- Portafolio Item 1-->
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div
+              class="portfolio-item mx-auto"
+              data-bs-toggle="modal"
+              data-bs-target="#portfolioModal1"
+            >
+              <div
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="portfolio-item-caption-content text-center text-white"
+                >
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <h2>Desafío 1</h2>
+              <img class="img-fluid" src="assets/img/port.1.PNG" alt="..." />
+            </div>
+          </div>
+          <!-- Portafolio Item 2-->
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div
+              class="portfolio-item mx-auto"
+              data-bs-toggle="modal"
+              data-bs-target="#portfolioModal2"
+            >
+              <div
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="portfolio-item-caption-content text-center text-white"
+                >
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <h2>Desafío 2</h2>
+              <img class="img-fluid" src="assets/img/port.2.PNG" alt="..." />
+            </div>
+          </div>
+          <!-- Portafolio Item 3-->
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div
+              class="portfolio-item mx-auto"
+              data-bs-toggle="modal"
+              data-bs-target="#portfolioModal3"
+            >
+              <div
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="portfolio-item-caption-content text-center text-white"
+                >
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <h2>Desafío 3</h2>
+              <img class="img-fluid" src="assets/img/port.3.PNG" alt="..." />
+            </div>
+          </div>
+          <!-- Portafolio Item 4-->
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+            <div
+              class="portfolio-item mx-auto"
+              data-bs-toggle="modal"
+              data-bs-target="#portfolioModal4"
+            >
+              <div
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="portfolio-item-caption-content text-center text-white"
+                >
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <h2>Desafío 4</h2>
+              <img class="img-fluid" src="assets/img/port.4.PNG" alt="..." />
+            </div>
+          </div>
+          <!-- Portafolio Item 5-->
+          <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+            <div
+              class="portfolio-item mx-auto"
+              data-bs-toggle="modal"
+              data-bs-target="#portfolioModal5"
+            >
+              <div
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="portfolio-item-caption-content text-center text-white"
+                >
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <h2>Desafío 5</h2>
+              <img class="img-fluid" src="assets/img/port.5.PNG" alt="..." />
+            </div>
+          </div>
+          <!-- Portafolio Item 6-->
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="portfolio-item mx-auto"
+              data-bs-toggle="modal"
+              data-bs-target="#portfolioModal6"
+            >
+              <div
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div
+                  class="portfolio-item-caption-content text-center text-white"
+                >
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <h2>Desafío 6</h2>
+              <img class="img-fluid" src="assets/img/port.6.PNG" alt="..." />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-
-
-    <section id="Mis-trabajos" class="my-5 p-5 bg-info">
-
-        <h2 class="display-4 fw-bold text-center text-light mb-3">Mis trabajos</h2>
-
+    <!--Sobre mi-->
+    <section class="page-section bg-secondary text-white mb-0" id="about">
+      <div class="container">
+        <!-- About Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-white">
+          Sobre Mi
+        </h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"></div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <!-- About Section Content-->
         <div class="row">
-            <div class="col-12 col-sm-4 py-2">
-                <div class="card">
-                    <div class="image-top" style="background-image: url(assets/img/card-1.jpg)"></div>
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Estuario Reloncaví</h5>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Explicabo iure sint, perspiciatis distinctio molestias nihil
-                            repudiandae neque rem adipisci repellendus libero illo quo
-                            blanditiis, velit quasi ad, recusandae voluptates officia.
-                        </p>
-                        <button type="button" class="btn btn-outline-info">
-                            Ver más
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4 py-2">
-                <div class="card">
-                    <div class="image-top" style="background-image: url(assets/img/card-2.jpg)"></div>
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Noche de Luna</h5>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Deserunt a culpa doloremque voluptatem dicta nam. Maxime ipsum,
-                            consequatur quos error fuga excepturi quo. Laudantium optio
-                            pariatur laboriosam modi, ea molestias?
-                        </p>
-                        <button type="button" class="btn btn-outline-info">
-                            Ver más
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4 py-2">
-                <div class="card">
-                    <div class="image-top" style="background-image: url(assets/img/card-3.jpg)"></div>
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Dihueñe</h5>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Obcaecati facere quibusdam sint id laborum magni velit ducimus
-                            corporis facilis qui architecto dolor, accusamus eveniet
-                            exercitationem fugit. Quod autem neque ducimus.
-                        </p>
-                        <button type="button" class="btn btn-outline-info">
-                            Ver más
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4 py-2">
-                <div class="card">
-                    <div class="image-top" style="background-image: url(assets/img/card-4.jpg)"></div>
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Ovejas</h5>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Explicabo iure sint, perspiciatis distinctio molestias nihil
-                            repudiandae neque rem adipisci repellendus libero illo quo
-                            blanditiis, velit quasi ad, recusandae voluptates officia.
-                        </p>
-                        <button type="button" class="btn btn-outline-info">
-                            Ver más
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4 py-2">
-                <div class="card">
-                    <div class="image-top" style="background-image: url(assets/img/card-5.jpg)"></div>
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Flores</h5>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Deserunt a culpa doloremque voluptatem dicta nam. Maxime ipsum,
-                            consequatur quos error fuga excepturi quo. Laudantium optio
-                            pariatur laboriosam modi, ea molestias?
-                        </p>
-                        <button type="button" class="btn btn-outline-info">
-                            Ver más
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4 py-2">
-                <div class="card">
-                    <div class="image-top" style="background-image: url(assets/img/card-6.jpg)"></div>
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Luna</h5>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Obcaecati facere quibusdam sint id laborum magni velit ducimus
-                            corporis facilis qui architecto dolor, accusamus eveniet
-                            exercitationem fugit. Quod autem neque ducimus.
-                        </p>
-                        <button type="button" class="btn btn-outline-info">
-                            Ver más
-                        </button>
-                    </div>
-                </div>
-            </div>
+          <div class="row ms-auto">
+            <p class="lead">
+              Reinventándome hacia el desarrollo web. Apasionado por la
+              tecnología y el aprendizaje autodidacta.Como novato en el campo
+              del desarrollo web, estoy entusiasmado por adentrarme en éste
+              emocionante mundo y expandir mis habilidades a través de
+              oportunidades de aprendizaje en línea. Mi objetivo es convertirme
+              en un desarrollador web competente y capaz, aprovechando la
+              flexibilidad que ofrece la educación en línea.
+            </p>
+          </div>
+          <div class="row ms-auto">
+            <p class="lead">
+              Desarrollo laboral principalmente en pyme familiar, con
+              experiencia en trabajos de infraestructura, electricidad,
+              construcción y reparaciones varias, sistemas de control automático
+              de nivel de aguas servidas, implementación de redes LAN,
+              instalación y configuración de sistemas de videovigilancia.
+              Prestando servicios de mantenimiento por años en Colegio La Virgen
+              de Pompeya, Las Condes. hasta inicios del 2020
+            </p>
+          </div>
+          <div class="row ms-auto">
+            <p class="lead">
+              Técnico de Nivel Superior en Electrónica Industrial CENTRO DE
+              FORMACIÓN TÉCNICA INACAP Diciembre 2009
+            </p>
+          </div>
+          <div class="row ms-auto">
+            <p class="lead">
+              Aptitudes • Constante curiosidad por la tecnología y variados
+              temas • Familiaridad con lenguajes como JavaScript, HTML y CSS. •
+              Capacidad para trabajar en equipos. • Inglés técnico intermedio. •
+              Inglés conversacional nivel B2 • Experiencia autodidacta en armado
+              y configuración de computadores, uso de herramientas de edición de
+              video, fotografía y aplicaciones de ofimática.
+            </p>
+          </div>
         </div>
 
+        <!-- About Section Button-->
+        <div class="text-center mt-4">
+          <a
+            class="btn btn-xl btn-outline-light"
+            href="https://github.com/DanielMend3z"
+          >
+            Mi Github
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--Sección de Contacto-->
+    <section class="page-section" id="contact">
+      <div class="container">
+        <!-- Contact Section Heading-->
+        <h2
+          class="page-section-heading text-center text-uppercase text-secondary mb-0"
+        >
+          Contáctame
+        </h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"></div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <!-- Contact Section Form-->
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-xl-7">
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- * * SB Forms Contact Form * *-->
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- This form is pre-integrated with SB Forms.-->
+            <!-- To make this form functional, sign up at-->
+            <!-- https://startbootstrap.com/solution/contact-forms-->
+            <!-- to get an API token!-->
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+              <!-- Name input-->
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="name"
+                  type="text"
+                  placeholder="Enter your name..."
+                  data-sb-validations="required"
+                />
+                <label for="name">Nombre</label>
+                <div class="invalid-feedback" data-sb-feedback="name:required">
+                  A name is required.
+                </div>
+              </div>
+              <!-- Email address input-->
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="email"
+                  type="email"
+                  placeholder="name@example.com"
+                  data-sb-validations="required,email"
+                />
+                <label for="email">Correo</label>
+                <div class="invalid-feedback" data-sb-feedback="email:required">
+                  An email is required.
+                </div>
+                <div class="invalid-feedback" data-sb-feedback="email:email">
+                  Email is not valid.
+                </div>
+              </div>
+              <!-- Phone number input-->
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="phone"
+                  type="tel"
+                  placeholder="(123) 456-7890"
+                  data-sb-validations="required"
+                />
+                <label for="phone">Teléfono</label>
+                <div class="invalid-feedback" data-sb-feedback="phone:required">
+                  A phone number is required.
+                </div>
+              </div>
+              <!-- Message input-->
+              <div class="form-floating mb-3">
+                <textarea
+                  class="form-control"
+                  id="message"
+                  type="text"
+                  placeholder="Enter your message here..."
+                  style="height: 10rem"
+                  data-sb-validations="required"
+                ></textarea>
+                <label for="message">Mensage</label>
+                <div
+                  class="invalid-feedback"
+                  data-sb-feedback="message:required"
+                >
+                  A message is required.
+                </div>
+              </div>
+              <!-- Submit success message-->
+              <!---->
+              <!-- This is what your users will see when the form-->
+              <!-- has successfully submitted-->
+              <div class="d-none" id="submitSuccessMessage">
+                <div class="text-center mb-3">
+                  <div class="fw-bolder">Form submission successful!</div>
+                  To activate this form, sign up at
+                  <br />
+                  <a href="https://startbootstrap.com/solution/contact-forms"
+                    >https://startbootstrap.com/solution/contact-forms</a
+                  >
+                </div>
+              </div>
+              <!-- Submit error message-->
+              <!---->
+              <!-- This is what your users will see when there is-->
+              <!-- an error submitting the form-->
+              <div class="d-none" id="submitErrorMessage">
+                <div class="text-center text-danger mb-3">
+                  Error sending message!
+                </div>
+              </div>
+              <!-- Submit Button-->
+              <button
+                class="btn btn-primary btn-xl disabled"
+                id="submitButton"
+                type="submit"
+              >
+                Enviar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
 
-
-
-    <section id="Contacto" class="container my-5">
-
-        <h2 class="display-4 fw-bold text-center my-4">Contáctame</h2>
-
-        <p class="text-center my-4 d-none d-md-block">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Doloribus
-            sapiente, autem delectus totam expedita
-            animi corporis dolorem qui magnam, aspernatur officiis quasi culpa tempora est commodi. Voluptate beatae
-            tempora quaerat?</p>
-
-        <form>
-
-
-            <div class="form-group mb-4">
-                <label class="mb-2">Nombre</label>
-                <input class="form-control" placeholder="Nombre">
+    <!--Modal1-->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal1"
+      tabindex="-1"
+      aria-labelledby="portfolioModal1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              class="btn-close"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center pb-5">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                  >
+                    Mi CV en HTML.
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Image-->
+                  <img
+                    class="img-fluid rounded mb-5"
+                    src="assets/img/mod1.PNG"
+                    alt="..."
+                  />
+                  <!-- Portfolio Modal - Text-->
+                  <p class="mb-4">
+                    Primer desafío para aprender a implementar las etiquetas html realizando un currículum simple utilizando correctamente la estructura de un documento html.
+                  </p>
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    <i class="fas fa-xmark fa-fw"></i>
+                    Cerrar Ventana
+                  </button>
+                </div>
+              </div>
             </div>
-
-            <div class="form-group mb-4">
-                <label class="mb-2">Correo electrónico</label>
-                <input class="form-control" placeholder="Correo electrónico" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 2-->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal2"
+      tabindex="-1"
+      aria-labelledby="portfolioModal2"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              class="btn-close"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center pb-5">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                  >
+                    Construyendo un Landing Page
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Image-->
+                  <img
+                    class="img-fluid rounded mb-5"
+                    src="assets/img/mod2.PNG"
+                    alt="..."
+                  />
+                  <!-- Portfolio Modal - Text-->
+                  <p class="mb-4">
+                    Manteniendo una correcta estructura de etiquetas html, en éste desafío integramos CSS a la página a realizar para mejorar la visualización. 
+                  </p>
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    <i class="fas fa-xmark fa-fw"></i>
+                    Cerrar Ventana
+                  </button>
+                </div>
+              </div>
             </div>
-
-
-            <div class="form-group">
-                <label class="mb-2">Mensaje</label>
-                <textarea class="form-control" placeholder="Escribe aquí tu mensaje"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 3-->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal3"
+      tabindex="-1"
+      aria-labelledby="portfolioModal3"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              class="btn-close"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center pb-5">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                  >
+                    Iguana Page
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Image-->
+                  <img
+                    class="img-fluid rounded mb-5"
+                    src="assets/img/mod3.PNG"
+                    alt="..."
+                  />
+                  <!-- Portfolio Modal - Text-->
+                  <p class="mb-4">
+                    En éste desafío de iguana page, a partir de un bosquejo, debíamos implementar una página que estucturalmente se visualizara lo más parecido posible, utilizando Flex en CSS, e integrando íconos y tipografías mediantes enlaces cdn.
+                  </p>
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    <i class="fas fa-xmark fa-fw"></i>
+                    Cerrar Ventana
+                  </button>
+                </div>
+              </div>
             </div>
-
-            <div class="my-3 text-end">
-                <button class="btn btn-info text-light">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  Modal 4-->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal4"
+      tabindex="-1"
+      aria-labelledby="portfolioModal4"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              class="btn-close"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center pb-5">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                  >
+                    CUPPON
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Image-->
+                  <img
+                    class="img-fluid rounded mb-5"
+                    src="assets/img/mod4.PNG"
+                    alt="..."
+                  />
+                  <!-- Portfolio Modal - Text-->
+                  <p class="mb-4">
+                    Un proyecto desarrollado para aprender a implementar responsividad mediante la grilla responsiva de Bootstrap, para acomodar la visualización de la página a diferentes resoluciones de pantalla. 
+                  </p>
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    <i class="fas fa-xmark fa-fw"></i>
+                    Cerrar Ventana
+                  </button>
+                </div>
+              </div>
             </div>
-
-
-
-        </form>
-
-    </section>
-
-
-
-    <footer class="bg-dark text-center text-light p-4">
-        <p class="mb-0">Daniel Mendez 2023. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 5-->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal5"
+      tabindex="-1"
+      aria-labelledby="portfolioModal5"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              class="btn-close"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center pb-5">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                  >
+                    GITHUB
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Image-->
+                  <img
+                    class="img-fluid rounded mb-5"
+                    src="assets/img/mod5.PNG"
+                    alt="..."
+                  />
+                  <!-- Portfolio Modal - Text-->
+                  <p class="mb-4">
+                    En éste desafío aplicamos los conocimientos de Git y validamos la utilización de Github para subir nuestros proyectos y modificarlo mediante los commits en la plataforma de Github.
+                  </p>
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    <i class="fas fa-xmark fa-fw"></i>
+                    Cerrar Ventana
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 6-->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal6"
+      tabindex="-1"
+      aria-labelledby="portfolioModal6"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              class="btn-close"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center pb-5">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                  >
+                    Trabajo Colaborativo y Github Pages
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Image-->
+                  <img
+                    class="img-fluid rounded mb-5"
+                    src="assets/img/mod6.PNG"
+                    alt="..."
+                  />
+                  <!-- Portfolio Modal - Text-->
+                  <p class="mb-4">
+                    Desarrollo de Curriculum actualizado, basándome en un template de Bootstrap, que incluye HTML, CSS y JavaScript, realizando modificaciones y adaptaciones a la información que yo desee agregar, además como trabajo colaborativo con los compañeros para realizar modificaciones en el repositorio en la plataforma de Github.
+                  </p>
+                  <button class="btn btn-primary" data-bs-dismiss="modal">
+                    <i class="fas fa-xmark fa-fw"></i>
+                    Cerrar Ventana
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="row">
+          <!-- Footer Location-->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">UBICACION</h4>
+            <p class="lead mb-0">
+              Huenutil de la Cabrería
+              <br />
+             Comuna , Ñiquen.
+            </p>
+          </div>
+          <!--Redes Sociales-->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Redes Sociales</h4>
+            <a class="btn btn-outline-light btn-social mx-1" href="#!"
+              ><i class="fab fa-fw fa-facebook-f"></i
+            ></a>
+            <a class="btn btn-outline-light btn-social mx-1" href="#!"
+              ><i class="fab fa-fw fa-twitter"></i
+            ></a>
+            <a class="btn btn-outline-light btn-social mx-1" href="#!"
+              ><i class="fab fa-fw fa-linkedin-in"></i
+            ></a>
+            <a class="btn btn-outline-light btn-social mx-1" href="#!"
+              ><i class="fab fa-fw fa-dribbble"></i
+            ></a>
+          </div>
+          <!-- Footer About Text-->
+          <div class="col-lg-4">
+            <h4 class="text-uppercase mb-4">Plantilla utilizada</h4>
+            <p class="lead mb-0">
+              Freelance is a free to use, MIT licensed Bootstrap theme created
+              by
+              <a href="http://startbootstrap.com">Start Bootstrap</a>
+              .
+            </p>
+          </div>
+        </div>
+      </div>
     </footer>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
