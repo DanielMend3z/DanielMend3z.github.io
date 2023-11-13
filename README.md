@@ -4,6 +4,6 @@
 
 # Fork1 : https://github.com/DanielMend3z/FranyeliRG.github.io
 
-# Fork2 : 
+# Fork2 : https://github.com/DanielMend3z/Ximmor.github.io
 
-
+# Fork by Karina Rojas
